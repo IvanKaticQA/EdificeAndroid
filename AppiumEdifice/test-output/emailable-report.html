@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">45</td><td class="numi">45</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1,063.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="45">tests.EdificeTestAndroid</td><td><a href="#m1"><b>BluDeny</b>  </a></td><td class="numi">1</td><td>1642499810588</td><td class="numi">1208</td></tr><tr class="passedodd"><td><a href="#m2"><b>BluDialog</b>  </a></td><td class="numi">1</td><td>1642499811798</td><td class="numi">38</td></tr><tr class="passedodd"><td><a href="#m3"><b>BluAllow</b>  </a></td><td class="numi">1</td><td>1642499811837</td><td class="numi">2978</td></tr><tr class="passedodd"><td><a href="#m4"><b>Screen_Step_1</b>  </a></td><td class="numi">1</td><td>1642499814816</td><td class="numi">2403</td></tr><tr class="passedodd"><td><a href="#m5"><b>Choose_a_sensor</b>  </a></td><td class="numi">1</td><td>1642499817220</td><td class="numi">113462</td></tr><tr class="passedodd"><td><a href="#m6"><b>Screen_Step_2</b>  </a></td><td class="numi">1</td><td>1642499930683</td><td class="numi">59</td></tr><tr class="passedodd"><td><a href="#m7"><b>Screen_Select_a_Network</b>  </a></td><td class="numi">1</td><td>1642499930743</td><td class="numi">892</td></tr><tr class="passedodd"><td><a href="#m8"><b>Choose_a_network</b>  </a></td><td class="numi">1</td><td>1642499931637</td><td class="numi">7743</td></tr><tr class="passedodd"><td><a href="#m9"><b>Choose_a_network_Password_Show</b>  </a></td><td class="numi">1</td><td>1642499939382</td><td class="numi">2329</td></tr><tr class="passedodd"><td><a href="#m10"><b>Choose_a_network_Password_Cancel</b>  </a></td><td class="numi">1</td><td>1642499941713</td><td class="numi">846</td></tr><tr class="passedodd"><td><a href="#m11"><b>Choose_a_network_Incorrect_Password</b>  </a></td><td class="numi">1</td><td>1642499942562</td><td class="numi">17299</td></tr><tr class="passedodd"><td><a href="#m12"><b>Choose_a_network_Connection_Failed</b>  </a></td><td class="numi">1</td><td>1642499959863</td><td class="numi">68</td></tr><tr class="passedodd"><td><a href="#m13"><b>Choose_a_network_Connection_Failed_Back</b>  </a></td><td class="numi">1</td><td>1642499959933</td><td class="numi">778</td></tr><tr class="passedodd"><td><a href="#m14"><b>Choose_a_network_Connection_Correct_Password</b>  </a></td><td class="numi">1</td><td>1642499960713</td><td class="numi">21916</td></tr><tr class="passedodd"><td><a href="#m15"><b>Successful_connection</b>  </a></td><td class="numi">1</td><td>1642499982630</td><td class="numi">95</td></tr><tr class="passedodd"><td><a href="#m16"><b>Choosing_another_senzor</b>  </a></td><td class="numi">1</td><td>1642499982727</td><td class="numi">6310</td></tr><tr class="passedodd"><td><a href="#m17"><b>Button_Quit_Screen_Choose_a_sensor</b>  </a></td><td class="numi">1</td><td>1642499989038</td><td class="numi">15149</td></tr><tr class="passedodd"><td><a href="#m18"><b>Button_Quit_Screen_Choose_a_sensor_Quit</b>  </a></td><td class="numi">1</td><td>1642500004190</td><td class="numi">1390</td></tr><tr class="passedodd"><td><a href="#m19"><b>Button_Quit_Screen_Choose_a_sensor_Cancel</b>  </a></td><td class="numi">1</td><td>1642500005581</td><td class="numi">87549</td></tr><tr class="passedodd"><td><a href="#m20"><b>Choose_a_sensor_No_Results</b>  </a></td><td class="numi">1</td><td>1642500093131</td><td class="numi">38061</td></tr><tr class="passedodd"><td><a href="#m21"><b>Choose_a_sensor_Refresh</b>  </a></td><td class="numi">1</td><td>1642500131194</td><td class="numi">162</td></tr><tr class="passedodd"><td><a href="#m22"><b>Device_Name</b>  </a></td><td class="numi">1</td><td>1642500131356</td><td class="numi">114087</td></tr><tr class="passedodd"><td><a href="#m23"><b>Dialog_Connection_Cancel</b>  </a></td><td class="numi">1</td><td>1642500245444</td><td class="numi">1000</td></tr><tr class="passedodd"><td><a href="#m24"><b>Connecting_to_a_sensor_failed</b>  </a></td><td class="numi">1</td><td>1642500246445</td><td class="numi">132823</td></tr><tr class="passedodd"><td><a href="#m25"><b>Connecting_to_a_sensor_back</b>  </a></td><td class="numi">1</td><td>1642500379269</td><td class="numi">95892</td></tr><tr class="passedodd"><td><a href="#m26"><b>Connecting_to_a_sensor_Success</b>  </a></td><td class="numi">1</td><td>1642500475162</td><td class="numi">57</td></tr><tr class="passedodd"><td><a href="#m27"><b>Button_Quit_Screen_Select_Network</b>  </a></td><td class="numi">1</td><td>1642500475220</td><td class="numi">1733</td></tr><tr class="passedodd"><td><a href="#m28"><b>Button_Quit_Screen_Select_Network_Cancel</b>  </a></td><td class="numi">1</td><td>1642500476954</td><td class="numi">697</td></tr><tr class="passedodd"><td><a href="#m29"><b>Button_Quit_Screen_Select_Network_Quit</b>  </a></td><td class="numi">1</td><td>1642500477651</td><td class="numi">2108</td></tr><tr class="passedodd"><td><a href="#m30"><b>Add_Network</b>  </a></td><td class="numi">1</td><td>1642500479760</td><td class="numi">43257</td></tr><tr class="passedodd"><td><a href="#m31"><b>Add_Network_Cancel</b>  </a></td><td class="numi">1</td><td>1642500523019</td><td class="numi">736</td></tr><tr class="passedodd"><td><a href="#m32"><b>Add_Network_Confirm</b>  </a></td><td class="numi">1</td><td>1642500523756</td><td class="numi">6221</td></tr><tr class="passedodd"><td><a href="#m33"><b>Add_Network_AdvancedSettings_Proxy_None</b>  </a></td><td class="numi">1</td><td>1642500529978</td><td class="numi">9563</td></tr><tr class="passedodd"><td><a href="#m34"><b>Add_Network_Advenced_Options</b>  </a></td><td class="numi">1</td><td>1642500539542</td><td class="numi">21750</td></tr><tr class="passedodd"><td><a href="#m35"><b>Add_Network_AdvancedSettings_Proxy_Auto</b>  </a></td><td class="numi">1</td><td>1642500561293</td><td class="numi">21024</td></tr><tr class="passedodd"><td><a href="#m36"><b>Add_Network_AdvancedSettings_IP_Static</b>  </a></td><td class="numi">1</td><td>1642500582318</td><td class="numi">5048</td></tr><tr class="passedodd"><td><a href="#m37"><b>Add_Network_Security_WEP</b>  </a></td><td class="numi">1</td><td>1642500587366</td><td class="numi">8970</td></tr><tr class="passedodd"><td><a href="#m38"><b>Add_Network_Security_WPA_WPA2</b>  </a></td><td class="numi">1</td><td>1642500596337</td><td class="numi">123567</td></tr><tr class="passedodd"><td><a href="#m39"><b>Add_Network_Secuirty_802_1x</b>  </a></td><td class="numi">1</td><td>1642500719905</td><td class="numi">23172</td></tr><tr class="passedodd"><td><a href="#m40"><b>Add_Network_Secuirty_802_1x_PEAP</b>  </a></td><td class="numi">1</td><td>1642500743080</td><td class="numi">10736</td></tr><tr class="passedodd"><td><a href="#m41"><b>Add_Network_Secuirty_802_1x_TLS</b>  </a></td><td class="numi">1</td><td>1642500753817</td><td class="numi">11893</td></tr><tr class="passedodd"><td><a href="#m42"><b>Add_Network_Secuirty_802_1x_TTLS</b>  </a></td><td class="numi">1</td><td>1642500765712</td><td class="numi">12192</td></tr><tr class="passedodd"><td><a href="#m43"><b>Add_Network_Secuirty_802_1x_FAST</b>  </a></td><td class="numi">1</td><td>1642500777905</td><td class="numi">11959</td></tr><tr class="passedodd"><td><a href="#m44"><b>Add_Network_Secuirty_802_1x_PWD</b>  </a></td><td class="numi">1</td><td>1642500789865</td><td class="numi">12932</td></tr><tr class="passedodd"><td><a href="#m45"><b>Choosing_another_network_networkList</b>  </a></td><td class="numi">1</td><td>1642500802798</td><td class="numi">62204</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">tests.EdificeTestAndroid:Add_Network_Security_WEP</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">tests.EdificeTestAndroid:Add_Network_Security_WPA_WPA2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">tests.EdificeTestAndroid:Successful_connection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">tests.EdificeTestAndroid:Add_Network_Secuirty_802_1x_TTLS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">tests.EdificeTestAndroid:Choose_a_network_Connection_Failed_Back</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">tests.EdificeTestAndroid:Add_Network_AdvancedSettings_Proxy_Auto</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">tests.EdificeTestAndroid:Choose_a_network_Connection_Correct_Password</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">tests.EdificeTestAndroid:Choose_a_sensor_No_Results</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">tests.EdificeTestAndroid:BluDeny</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">tests.EdificeTestAndroid:Screen_Step_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">tests.EdificeTestAndroid:Connecting_to_a_sensor_back</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">tests.EdificeTestAndroid:Button_Quit_Screen_Choose_a_sensor_Quit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">tests.EdificeTestAndroid:Add_Network_Secuirty_802_1x_PEAP</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">tests.EdificeTestAndroid:Choose_a_network_Connection_Failed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">tests.EdificeTestAndroid:Add_Network_Secuirty_802_1x_FAST</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">tests.EdificeTestAndroid:Choosing_another_network_networkList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">tests.EdificeTestAndroid:Screen_Step_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">tests.EdificeTestAndroid:Button_Quit_Screen_Choose_a_sensor_Cancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">tests.EdificeTestAndroid:Add_Network_Advenced_Options</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">tests.EdificeTestAndroid:Choose_a_network_Password_Cancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">tests.EdificeTestAndroid:Add_Network_Secuirty_802_1x_PWD</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">tests.EdificeTestAndroid:Device_Name</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">tests.EdificeTestAndroid:Add_Network_AdvancedSettings_Proxy_None</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">tests.EdificeTestAndroid:BluAllow</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">tests.EdificeTestAndroid:Add_Network_AdvancedSettings_IP_Static</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">tests.EdificeTestAndroid:Choose_a_network_Incorrect_Password</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">tests.EdificeTestAndroid:Add_Network_Cancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">tests.EdificeTestAndroid:Choose_a_network_Password_Show</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">tests.EdificeTestAndroid:Connecting_to_a_sensor_failed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">tests.EdificeTestAndroid:Button_Quit_Screen_Choose_a_sensor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">tests.EdificeTestAndroid:Dialog_Connection_Cancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">tests.EdificeTestAndroid:Button_Quit_Screen_Select_Network_Cancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">tests.EdificeTestAndroid:Add_Network_Secuirty_802_1x</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">tests.EdificeTestAndroid:Choose_a_network</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">tests.EdificeTestAndroid:Screen_Select_a_Network</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">tests.EdificeTestAndroid:BluDialog</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">tests.EdificeTestAndroid:Connecting_to_a_sensor_Success</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">tests.EdificeTestAndroid:Choose_a_sensor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">tests.EdificeTestAndroid:Add_Network</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">tests.EdificeTestAndroid:Button_Quit_Screen_Select_Network</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">tests.EdificeTestAndroid:Add_Network_Secuirty_802_1x_TLS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">tests.EdificeTestAndroid:Add_Network_Confirm</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">tests.EdificeTestAndroid:Choosing_another_senzor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">tests.EdificeTestAndroid:Choose_a_sensor_Refresh</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">tests.EdificeTestAndroid:Button_Quit_Screen_Select_Network_Quit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

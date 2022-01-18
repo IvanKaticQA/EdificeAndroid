@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="tests.EdificeTestAndroid">
+        <methods>
+          <include name="Add_Network_AdvancedSettings_Proxy_Auto"/>
+          <include name="Add_Network_Security_WEP"/>
+          <include name="Add_Network_Secuirty_802_1x"/>
+          <include name="Add_Network_Security_WPA_WPA2"/>
+          <include name="posleSvakogTesta"/>
+          <include name="Add_Network_Secuirty_802_1x_PEAP"/>
+          <include name="Add_Network_Advenced_Options"/>
+          <include name="Add_Network_Secuirty_802_1x_TLS"/>
+          <include name="Add_Network_Secuirty_802_1x_FAST"/>
+          <include name="setup"/>
+          <include name="Add_Network_AdvancedSettings_Proxy_None"/>
+          <include name="Choosing_another_network_networkList"/>
+          <include name="Add_Network_Confirm"/>
+          <include name="Add_Network_Secuirty_802_1x_TTLS"/>
+          <include name="Add_Network_AdvancedSettings_IP_Static"/>
+          <include name="Add_Network_Secuirty_802_1x_PWD"/>
+        </methods>
+      </class> <!-- tests.EdificeTestAndroid -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
