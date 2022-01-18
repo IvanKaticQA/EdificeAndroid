@@ -1,0 +1,36 @@
+Uputstvo za pokretanje automatskog testa:
+
+Prvi korak koji je potreban je da se promeni device name ukolio
+se testira na nekom drugom uredjaju.
+Prikaciti android uredjaj putem USB kabela na sistem i dozovili USB Debugging
+1. Otovoriti Command Promtp
+2. adb devices
+3. Kopirati ime uredjaj   // izgleda slicno kao u ovom primeru "85fb4fa4"
+Kad je to kopirano potrebno je otvoriti projekat i promeniti DeviceName 
+Tests-BaseClass- Setup
+caps.setCapability("deviceName", "85fb4fa4"); // ovaj deo je potrebno promeniti, ime uredjaja na kom se vrsi testiranje
+
+Drugi korak pronaci IP addresu na kojoj je povezana uticnica na
+koju je prikljucen uredjaj
+1. sudo apt install nmap
+2. nmap -sn192.168.33.10-150   // Provera na kojoj je mrezi uredjaj 
+
+Kad se IP adresa pronadje potrebno je zameniti u kodu gde se 
+poziva IP adresa na kom je povezan uredjaj.
+Pages-edifice- SocketOnOFF , SocketOnOFFOnces
+driver.navigate().to("http://192.168.33.88/");	// ovaj deo je potrebno promeniti na pronadjenu/trenutnu adresu
+
+Pronaci xpath ka lokaciji EdificeApp iz menija ukoliko se uredjaj promenio:
+
+
+
+
+Za vreme automatskog testa potrebno je i kliknuti na par elemenata jer nisu vidljivi ili ih je nemoguce naci zbog samog locatora xpath koji je promenljiv:
+
+1.Choose_a_network_Connection_Correct_Password  // Step gde trazi da se klikne na odgovarajucu mrezu, kliknuti na "MCD2021" i dalje on radi sam input sifre
+2.Button_Quit_Screen_Choose_a_sensor    // U nekim slucajevima trazi da se dozvoli lokacija pa je potrebno ispratiti i ako zadrazi dozvoliti klikom na button "Allow"
+3.Button_Quit_Screen_Choose_a_sensor_Cancel // U nekim slucajevi trazi da se dozvoli lokacija i pisanje fajla pa je potrebno ispratiti i ako zadrazi dozvoliti kliknuti dva puta na button "Allow"
+4.Add_Network_Advenced_Options  // Potrebno je scroll down ukoliko je uredjaj sa manjim displayem jer element nije vidljiv dok se ne pojavi na display-u 
+5.Add_Network_Security_WEP    //Potrebno je scroll down ukoliko je uredjaj sa manjim displayem jer element nije vidljiv dok se ne pojavi na display-u
+6.Add_Network_AdvancedSettings_Proxy_Auto   // Potrebno je izabrati skriptu koju zelimo, klikom na jednu od prikazanih skripta
+7.Choosing_another_network_networkList    //Step gde trazi da se klikne na odgovarajucu mrezu, kliknuti na "MCD2021" i dalje on radi sam input sifre
